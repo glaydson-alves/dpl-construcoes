@@ -1,0 +1,9 @@
+:root{--corPrincipal:#049DD9;
+--corSecundaria:#F27B35;}
+
+.bgcnav{background: var(--corPrincipal);}
+.logonav{height: 40px; }
+
+#data{font-size: 14px; color: #fff;}
+
+.bgcfooter{background-color: var(--corPrincipal);}
