@@ -7,3 +7,25 @@
 #data{font-size: 14px; color: #fff;}
 
 .bgcfooter{background-color: var(--corPrincipal);}
+/* 
+body{height: 90vh;} */
+
+.color-btn{
+    background-color: var(--corSecundaria);
+    border: none;
+}
+
+.fa-brands{border:2px solid white;
+    border-radius: 50%;
+    padding: 5px;
+    background-color: white;
+    }
+
+hr{
+    width: 90%;
+    margin-left: 5%;
+color: white;}
+
+main{height: 74vh;}
+
+.navbar-toggler{border: none; }
