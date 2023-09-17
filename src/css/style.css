@@ -28,6 +28,8 @@ html, body{
 
 /* BOTÃO ENVIAR */
 .color-btn{
+    display: flex;
+    justify-content: center;
     background-color: var(--corSecundaria);
     border: none;
 }
@@ -141,3 +143,22 @@ body.dark{background-color: var(--corPrincipalDark);}
     }
       
 } */
+
+
+/* ANIMAÇÃO DE CARREGAMENTO */
+
+/* .c-loader {
+    animation: is-rotating 1s infinite;
+    border: 6px solid #e5e5e5;
+    border-radius: 50%;
+    border-top-color: var(--corPrincipal);
+    height: 30px;
+    width: 30px;
+
+  }
+  
+  @keyframes is-rotating {
+    to {
+      transform: rotate(1turn);
+    }
+  } */
