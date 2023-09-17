@@ -17,3 +17,25 @@ atualizarData();
 
 // Configure um intervalo para atualizar a data regularmente (por exemplo, a cada segundo)
 setInterval(atualizarData, 1000);
+
+// VALIDAÇÃO DE CAMPOS VAZIOS
+
+document.getElementById('submit').addEventListener('click', ()=>{
+  // Verifique se os campos estão vazios
+  const integrante = document.getElementById('integrante').value
+  const local = document.getElementById('local').value
+  const veiculo = document.getElementById('veiculo').value
+
+  if ( integrante === '' || local === '' || veiculo === '') {
+      alert('Por favor, preencha todos os campos.');
+      event.preventDefault(); // Impede o envio do formulário
+  }
+})
+// ************************************************//
+
+// MODO ESCURO
+const escuro = document.getElementById('escuro')
+
+
+dark.addEventListener('change', () => {document.body.classList.toggle('dark')})
+

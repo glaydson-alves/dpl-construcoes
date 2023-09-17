@@ -1,31 +1,128 @@
-:root{--corPrincipal:#049DD9;
---corSecundaria:#F27B35;}
+/* VARIAVEIS */
+:root{
+    /* MODO CLARO */
+    --corPrincipal:#049DD9;
+    --corSecundaria:#F27B35;
+    /* MODO ESCURO */
+    --corPrincipalDark:#003246;
+}
 
-.bgcnav{background: var(--corPrincipal);}
+
+.bgcnav,
+.colapseCor{background: var(--corPrincipal);}
+
 .logonav{height: 40px; }
 
-#data{font-size: 14px; color: #fff;}
+
+#data{
+    font-size: 14px;
+    color: #fff;
+}
 
 .bgcfooter{background-color: var(--corPrincipal);}
-/* 
-body{height: 90vh;} */
 
+
+/* BOTÃO ENVIAR */
 .color-btn{
     background-color: var(--corSecundaria);
     border: none;
 }
+.color-btn:hover{outline: 1px solid var(--corSecundaria);}
+.color-btn:active{transform: scale(0.96);}
 
-.fa-brands{border:2px solid white;
+/* ************************ */
+
+.fa-brands{
+    margin-top: 8px;
+    border:2px solid white;
     border-radius: 50%;
     padding: 5px;
     background-color: white;
-    }
+}
 
 hr{
     width: 90%;
     margin-left: 5%;
-color: white;}
+    color: white;
+}
+main{
+    height:100%;
+}
+body{
+    height: 100%;
+}
 
-main{height: 74vh;}
+.navbar-toggler{
+    border:none;
+}
 
-.navbar-toggler{border: none; }
+.form-check-input:checked {
+    background-color: var(--corSecundaria);
+}
+
+
+/* MODO ESCURO */
+.dark .colapseCor{background-color: var(--corPrincipalDark);}
+
+.dark .bgcfooter{background-color: var(--corPrincipalDark);}
+.dark .bgcnav{background-color: var(--corPrincipalDark);}
+body.dark{background-color: var(--corPrincipal);}
+.dark h1{color: #fff;}
+
+.dark .navbar-toggler-icon{ MUDAR A COR DO ICONE BOTAO MENU;}
+
+/* **************************************** */
+
+
+
+
+
+
+/* BOTAO MODO ESCURO*/
+.container-modo-dark{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.checkbox {
+    opacity: 0;
+    position: absolute;
+}
+
+.label {
+    margin: 10px;
+    border: 1px solid #F27B35;
+    background-color: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+
+    padding: 5px;
+    position: relative;
+    height: 21px;
+    width: 45px;
+
+    transform: scale(1.5);
+}
+
+.label .ball {
+    background-color: var(--corSecundaria);
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+
+    height: 15px;
+    width: 15px;
+
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
+}
+.checkbox:checked+.label .ball {transform: translate(24px);}
+
+/* ********************************************************** */
+
+

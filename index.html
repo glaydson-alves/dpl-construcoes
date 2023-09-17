@@ -18,11 +18,7 @@
 </head>
 
 <body>
-
-
-    <header class="bgcnav">
-
-
+    <header class="bgcnav shadow">
         <nav class="navbar">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
@@ -38,77 +34,71 @@
                 </div>
 
                 <section>
-                    <p id="data" class=""></p>
+                    <p id="data"></p>
                 </section>
 
-                <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                <div class="offcanvas offcanvas-start text-light colapseCor" tabindex="-1" id="offcanvasDarkNavbar"
                     aria-labelledby="offcanvasDarkNavbarLabel">
                     <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
+                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">DPL</h5>
                         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
                             aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body">
                         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                <a class="nav-link active text-light" aria-current="page" href="#">Sobre</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Link</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    Dropdown
-                                </a>
-                                <ul class="dropdown-menu dropdown-menu-dark">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
+                                 <!-- BOTÃO MODO ESCURO -->
+
+                                <div class="container-modo-dark">
+                                    <div class="desc-dark">
+                                        <p>Modo Escuro</p>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" class="checkbox" id="dark">
+                                        <label class="label" for="dark">
+                                            <div class="ball"></div>
+                                        </label>
+                                    </div>
+                                </div>
                             </li>
                         </ul>
-                        <form class="d-flex mt-3" role="search">
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-success" type="submit">Search</button>
-                        </form>
                     </div>
                 </div>
             </div>
         </nav>
     </header>
 
-    <main class="d-flex align-items-center">
-        <form action="#" class="container">
+    <main class="d-flex align-items-center mt-5">
+        <form action="#" class="container pt-5">
             <div class="mb-3">
                 <h1 class="d-flex justify-content-center">Dados do serviço</h1>
             </div>
             <section>
                 <div class="form-floating mb-3">
-                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                    <label for="floatingInput">Nome dos integrantes da equipe</label>
+                    <input type="text" class="form-control" id="integrante" placeholder="Integrantes da equipe">
+                    <label for="floatingInput">Integrantes da equipe</label>
                 </div>
 
                 <div class="form-floating mb-3">
-                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <input type="text" class="form-control" id="local" placeholder="Local de serviço">
                     <label for="floatingInput">Local de serviço</label>
                 </div>
                 <div class="form-floating mb-3">
-                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <input type="text" class="form-control" id="veiculo" placeholder="Indentificação do Veículo">
                     <label for="floatingInput">Indentificação do Veículo</label>
                 </div>
-                <button class="container color-btn rounded text-light p-3" type="submit">Enviar</button>
+                <button class="container color-btn rounded text-light p-3 mb-5" type="submit" id="submit">ENVIAR</button>
             </section>
         </form>
     </main>
 
-    <footer class="bgcfooter fixed-bottom text-center">
+    <footer class="bgcfooter text-center mt-5">
         <div class="mt-2">
-            <a href="" class="fundo"><i class="fa-brands fa-instagram" style="color: #d92e7f"></i></a>
-            <a href=""> <i class="fa-brands fa-linkedin" style="color: #0a66c2;"></i></a>
+            <a href="https://www.instagram.com/dplconstrucoesltda/" target="_blank"><i class="fa-brands fa-instagram" style="color: #d92e7f"></i></a>
+            <a href="https://www.linkedin.com/company/dplconstrucoes/?originalSubdomain=br" target="_blank"> <i class="fa-brands fa-linkedin" style="color: #0a66c2;"></i></a>
         </div>
 
         <section class="mt-2">
@@ -117,7 +107,7 @@
         </section>
 
         <hr>
-        <p class="text-light">Todos os direitos reservados &copy; 2023</p>
+        <p class="text-light p-2">Todos os direitos reservados &copy; 2023</p>
     </footer>
 
 
