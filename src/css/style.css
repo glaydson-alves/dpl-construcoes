@@ -12,6 +12,11 @@ html, body{
     padding: 0;
 }
 
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+.navbar-toggler-icon {}
+
 .bgcnav,
 .colapseCor{background: var(--corPrincipal);}
 
