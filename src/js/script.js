@@ -26,11 +26,46 @@ document.getElementById('submit').addEventListener('click', ()=>{
   const local = document.getElementById('local').value
   const veiculo = document.getElementById('veiculo').value
 
-  if ( integrante === '' || local === '' || veiculo === '') {
-      alert('Por favor, preencha todos os campos.');
-      event.preventDefault(); // Impede o envio do formulário
+  if ( integrante === '' || local === '' || veiculo === ''){
+    alert('Por favor, preencha todos os campos.')
+    event.preventDefault() // Impede o envio do formulário
   }
+  
 })
+
+// VALIDAÇÃO INTEGRANTE
+let integranteValue = document.querySelector("#integrante")
+
+integranteValue.addEventListener("blur", ()=>{
+    if (integranteValue.value == ""){
+      integranteValue.classList.add("border-danger","border-1")
+    }else{
+      integranteValue.classList.remove("border-danger","border-1")  
+    }
+})
+
+// VALIDAÇÃO LOCAL
+let localValue = document.querySelector("#local")
+
+localValue.addEventListener("blur", ()=>{
+    if (localValue.value == ""){
+      localValue.classList.add("border-danger","border-1")
+    }else{
+      localValue.classList.remove("border-danger","border-1")  
+    }
+})
+
+// VALIDAÇÃO VEICULO
+let veiculoValue = document.querySelector("#veiculo")
+
+veiculoValue.addEventListener("blur", ()=>{
+    if (veiculoValue.value == ""){
+      veiculoValue.classList.add("border-danger","border-1")
+    }else{
+      veiculoValue.classList.remove("border-danger","border-1")  
+    }
+})
+
 // ************************************************//
 
 // MODO ESCURO

@@ -6,7 +6,11 @@
     /* MODO ESCURO */
     --corPrincipalDark:#003246;
 }
-
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
 
 .bgcnav,
 .colapseCor{background: var(--corPrincipal);}
@@ -46,11 +50,9 @@ hr{
     color: white;
 }
 main{
-    height:100%;
+    height:56%;
 }
-body{
-    height: 100%;
-}
+
 
 .navbar-toggler{
     border:none;
@@ -62,19 +64,17 @@ body{
 
 
 /* MODO ESCURO */
+
 .dark .colapseCor{background-color: var(--corPrincipalDark);}
 
 .dark .bgcfooter{background-color: var(--corPrincipalDark);}
 .dark .bgcnav{background-color: var(--corPrincipalDark);}
-body.dark{background-color: var(--corPrincipal);}
+body.dark{background-color: var(--corPrincipalDark);}
 .dark h1{color: #fff;}
 
 .dark .navbar-toggler-icon{ MUDAR A COR DO ICONE BOTAO MENU;}
 
 /* **************************************** */
-
-
-
 
 
 
@@ -125,4 +125,19 @@ body.dark{background-color: var(--corPrincipal);}
 
 /* ********************************************************** */
 
+/* TABLET */
 
+@media(min-width:768px) and (max-width:1023px){
+    main{
+        height:72%;
+    }    
+}
+
+/* DESKTOP */
+
+/* @media screen and (min-width:1024px){
+    main{
+        width: 50%;
+    }
+      
+} */
