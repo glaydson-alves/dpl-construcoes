@@ -5,6 +5,9 @@ input.onchange = (e) =>{
     if(input.files[0])
     img.src = URL.createObjectURL(input.files[0])
     img.style.borderRadius = "10%"
+    img.style.width = "200px"
+    img.style.height = "200px"
+
 }
 
 let mensagem = document.querySelector("#mensagem")
