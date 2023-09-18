@@ -1,6 +1,10 @@
 // Seleciona o elemento HTML onde você deseja exibir a data
 let elementoData = document.getElementById("data");
-
+let dados = {
+  integrante:"",
+  local:"",
+  veiculo:""
+}
 // Função para atualizar a data
 function atualizarData() {
   let dataAtual = new Date();
@@ -30,6 +34,12 @@ document.getElementById('submit').addEventListener('click', ()=>{
     alert('Por favor, preencha todos os campos.')
     event.preventDefault() // Impede o envio do formulário
   }
+  else{
+    console.log(dados)
+    localStorage.setItem("dados",JSON.stringify(dados))
+    // window.location.replace = "src/pages/page1.html"
+    // localStorage.getItem(JSON.parse(dados))
+  }
   
 })
 
@@ -40,7 +50,8 @@ integranteValue.addEventListener("blur", ()=>{
     if (integranteValue.value == ""){
       integranteValue.classList.add("border-danger","border-1")
     }else{
-      integranteValue.classList.remove("border-danger","border-1")  
+      integranteValue.classList.remove("border-danger","border-1")
+      dados.integrante = integranteValue.value  
     }
 })
 
@@ -52,6 +63,7 @@ localValue.addEventListener("blur", ()=>{
       localValue.classList.add("border-danger","border-1")
     }else{
       localValue.classList.remove("border-danger","border-1")  
+      dados.local = localValue.value
     }
 })
 
@@ -63,6 +75,7 @@ veiculoValue.addEventListener("blur", ()=>{
       veiculoValue.classList.add("border-danger","border-1")
     }else{
       veiculoValue.classList.remove("border-danger","border-1")  
+      dados.veiculo = veiculoValue.value
     }
 })
 
@@ -73,4 +86,6 @@ const escuro = document.getElementById('escuro')
 
 
 dark.addEventListener('change', () => {document.body.classList.toggle('dark')})
+
+
 
