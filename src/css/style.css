@@ -163,18 +163,20 @@ body.dark{background-color: var(--corPrincipalDark);}
 
 /* ANIMAÇÃO DE CARREGAMENTO */
 
-/* .c-loader {
-    animation: is-rotating 1s infinite;
+.c-loader {
+    row-gap: 20px;
+    animation: is-rotating 0.8s infinite;
     border: 6px solid #e5e5e5;
     border-radius: 50%;
-    border-top-color: var(--corPrincipal);
+    border-top-color: var(--corSecundaria);
     height: 30px;
     width: 30px;
+    margin-right: 5px;
 
   }
   
   @keyframes is-rotating {
     to {
-      transform: rotate(1turn);
+      transform: rotate(2turn);
     }
-  } */
+  }
