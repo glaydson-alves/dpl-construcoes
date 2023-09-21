@@ -2,13 +2,27 @@ let img = document.getElementById("img")
 let input = document.getElementById("input")
 
 input.onchange = (e) =>{
-    if(input.files[0])
+    if(input.files[0]){
     img.src = URL.createObjectURL(input.files[0])
     img.style.borderRadius = "10%"
-    img.style.width = "200px"
-    img.style.height = "200px"
-
+    img.style.width = "200px"}
 }
+
+// VALIDAÇÃO DE CAMPO VAZIO DA IMG
+document. getElementById('submit').addEventListener('click', ()=>{
+    let inputImg = document.getElementById('input')
+    let imgConteudo = inputImg.value
+
+    if(imgConteudo === ''){
+        console.log(imgConteudo)
+        alert("por favor, selecione uma imagem.")
+        event.preventDefault()
+    }
+})
+
+// **************************
+
+
 
 let mensagem = document.querySelector("#mensagem")
 let restante = document.querySelector("#restante")

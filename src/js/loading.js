@@ -1,3 +1,15 @@
-let carregar = document.getElementById("carregar")
+const enviarButton = document.getElementById('submit')
+        const loader = document.getElementById('loader')
 
-carregar.innerHTML ="<div class="c-loader"></div>"
+        enviarButton.addEventListener('click', function() {
+            
+            enviarButton.style.display = 'none'
+            enviarButton.innerHTML = ''
+            loader.style.display = 'block'
+
+            setTimeout(function() {
+                enviarButton.style.display = 'block'
+                enviarButton.innerHTML = 'ENVIAR'
+                loader.style.display = 'none'
+            }, 3000); 
+        });

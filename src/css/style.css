@@ -24,7 +24,7 @@ footer{flex-shrink: 0;}
 .navbar-toggler:focus{
     box-shadow: none;
 }
-.navbar-toggler-icon {}
+
 
 .bgcnav,
 .colapseCor{background: var(--corPrincipal);}
@@ -163,20 +163,22 @@ body.dark{background-color: var(--corPrincipalDark);}
 
 /* ANIMAÇÃO DE CARREGAMENTO */
 
-.c-loader {
-    row-gap: 20px;
-    animation: is-rotating 0.8s infinite;
-    border: 6px solid #e5e5e5;
-    border-radius: 50%;
-    border-top-color: var(--corSecundaria);
-    height: 30px;
-    width: 30px;
+.loader {
     margin-right: 5px;
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid var(--corSecundaria);
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    animation: spin 1s linear infinite;
+    display:none;
+}
 
-  }
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+    
+
+
   
-  @keyframes is-rotating {
-    to {
-      transform: rotate(2turn);
-    }
-  }
