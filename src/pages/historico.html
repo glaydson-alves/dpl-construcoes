@@ -14,7 +14,7 @@
     <!-- link css -->
     <link rel="stylesheet" href="../css/style.css">
 
-    <title>Aterrar</title>
+    <title>Proteger</title>
 </head>
 
 <body>
@@ -75,50 +75,20 @@
     </header>
 
     <main>
-        <h1 class="d-flex justify-content-center my-3">Regra de Ouro #5: Aterrar</h1>
-        <form action="#" class="mt-4">
-            <div class="container-fluid d-flex flex-column ">
-                <section class=" d-flex justify-content-center"><label for="input">
-                    <img id="img" src="../image/choose.png" height="200"></label>
-                </section>
-
-                <div>
-                    <div class="mb-3">
-                        <input class="form-control mt-5" type="file" id="input" accept="image/*">
-                    </div>
-
-                    <section class="row mb-3">
-                        <div class="col-12">
-
-                            <textarea name="mensagem" name="mensagem" id="mensagem" placeholder="Observações"
-                                class="form-control remove"></textarea>
-                            <p class="text-end">Total de caracteres restantes <span id="restante">0</span>/100</p>
-                        </div>
-                    </section>
-
-                    <a href="proteger.html" class="color-btn rounded text-light p-3 mb-5" type="submit" id="submit">
-                        <span class="loader" id="loader"></span>Próximo
-                    </a>
-                </div>
-            </div>
-        </form>
-        <section class="d-flex justify-content-center">
-            <div aria-label="Page navigation example justify-content-center">
-                <ul class="pagination">
-                    <li class="page-item">
-                        <a class="page-link" href="testar.html" aria-label="Previous">
-                            <span aria-hidden="true">&laquo;</span>
-                        </a>
-                    </li>
-                    <li class="page-item"><span class="page-link">1</span></li>
-                    <li class="page-item"><span class="page-link">2</span></li>
-                    <li class="page-item"><span class="page-link">3</span></li>
-                    <li class="page-item"><span class="page-link">4</span></li>
-                    <li class="page-item active"><span class="page-link">5</span></li>
-                    <li class="page-item"><span class="page-link">6</span></li>
-                </ul>
-            </div>
-        </section>
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Data</th>
+                        <th scope="col">Integrantes</th>
+                        <th scope="col">Local</th>
+                        <th scope="col">Veiculo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
     </main>
 
     <footer class="bgcfooter text-center mt-5 d-flex align-items-center flex-column">
@@ -141,8 +111,8 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="../js/script.js"></script>
-    <script src="../js/page1.js"></script>
+    <!-- -->
+ <script src="../js/historico.js"></script>
 </body>
 
 </html>

@@ -88,6 +88,13 @@ body.dark{background-color: var(--corPrincipalDark);}
 
 .dark .navbar-toggler-icon{ border: 2px solid red;}
 
+.active>.page-link{background-color: var(--corPrincipal);
+     border: none;}
+
+.page-link{color: var(--corPrincipal);}
+
+.fh1{font-family:sans-serif;}
+
 /* **************************************** */
 
 

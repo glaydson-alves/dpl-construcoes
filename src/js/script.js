@@ -37,6 +37,7 @@ document.getElementById('submit').addEventListener('click', ()=>{
   else{
     console.log(dados)
     localStorage.setItem("dados",JSON.stringify(dados))
+    loader.style.display = 'block'
     
     // window.location.href = (src/pages/desligar.html)
     // localStorage.getItem(JSON.parse(dados))
