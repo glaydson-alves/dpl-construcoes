@@ -84,10 +84,10 @@ veiculoValue.addEventListener("blur", ()=>{
 // ************************************************//
 
 // MODO ESCURO
-const escuro = document.getElementById('escuro')
+// const escuro = document.getElementById('escuro')
 
 
-dark.addEventListener('change', () => {document.body.classList.toggle('dark')})
+// dark.addEventListener('change', () => {document.body.classList.toggle('dark')})
 
 
 
