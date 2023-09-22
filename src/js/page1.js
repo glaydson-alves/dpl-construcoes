@@ -38,5 +38,6 @@ mensagem.addEventListener("keyup", () => {
     }
     else{
         mensagem.style.border = "1px solid #ccc"
+        restante.parentNode.style.color = "black"
     }
 })
