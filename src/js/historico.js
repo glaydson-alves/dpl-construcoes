@@ -15,3 +15,11 @@ function atualizarData() {
   
   // Configure um intervalo para atualizar a data regularmente (por exemplo, a cada segundo)
   setInterval(atualizarData, 1000);
+
+  let tabelaVetor =JSON.parse(localStorage.getItem("historico"))
+  
+  if(tabelaVetor != null){
+    for(itens of tabelaVetor){
+      console.log(itens)
+    }
+}
