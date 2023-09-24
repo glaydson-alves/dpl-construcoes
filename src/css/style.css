@@ -87,10 +87,9 @@ hr{
 .dark .bgcfooter{background-color: var(--corPrincipalDark);}
 .dark .bgcnav{background-color: var(--corPrincipalDark);}
 body.dark{background-color: var(--corPrincipalDark);}
-.dark h1{color: #fff;}
-/* *********************** */
-
-
+.dark h1,
+.dark p,
+.dark #restante{color: #fff;}
 .dark .tabela th,
 .dark .tabela td {
     padding: 8px;
