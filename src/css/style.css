@@ -96,18 +96,19 @@ body.dark{background-color: var(--corPrincipalDark);}
 }
   
 .dark .tabela th {
-    background-color: var(--corPrincipalDark);
+    background-color: var(--corSecundaria);
     font-weight: bold;
     color: #fff;
-  }
-  
-  /* Estilos para linhas alternadas (opcional) */
+}
+
 .dark .tabela td { background-color: var(--corPrincipalDark);
 }
 
 /* ********************** */
-.active>.page-link{background-color: var(--corPrincipal);
-     border: none;}
+.active>.page-link{
+    background-color: var(--corPrincipal);
+    border: none;
+}
 
 .page-link{color: var(--corPrincipal);}
 
