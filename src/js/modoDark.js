@@ -13,7 +13,7 @@ if (temaArmazenado) {
 escuro.addEventListener('change', () => {
     if (document.body.classList.contains('dark')) {
         document.body.classList.remove('dark')
-        thema.modo = ""
+        thema.modo = null
     } else {
         document.body.classList.add('dark')
         thema.modo = "escuro"
