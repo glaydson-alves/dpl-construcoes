@@ -27,16 +27,11 @@ function atualizarData() {
 let tabelaVetor = JSON.parse(localStorage.getItem("historico"))
 
 if (tabelaVetor != null) {
-  // Obtém a referência do elemento HTML onde a tabela será exibida
   let tabela = document.getElementById("historico-tabela")
 
-  // Cria uma tabela HTML
   let table = document.createElement("table")
   table.classList.add("tabela")
  
-
-
-  // Cria a linha de cabeçalho
   let headerRow = document.createElement("tr")
   let headers = ["Data", "Integrantes", "Local", "Veiculo"]
   for (let header of headers) {
@@ -46,11 +41,9 @@ if (tabelaVetor != null) {
   }
   table.appendChild(headerRow)
 
-  // Adiciona os dados à tabela
   for (let item of tabelaVetor) {
     let row = document.createElement("tr")
 
-    // Para cada item, crie células de dados e adicione os valores
     for (let key in item) {
       let cell = document.createElement("td")
       cell.textContent = item[key]
@@ -59,7 +52,6 @@ if (tabelaVetor != null) {
 
     table.appendChild(row)
   }
-
-  // Adiciona a tabela à página
+  
   tabela.appendChild(table)
 }
