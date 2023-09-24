@@ -85,15 +85,33 @@ hr{
 .dark .bgcnav{background-color: var(--corPrincipalDark);}
 body.dark{background-color: var(--corPrincipalDark);}
 .dark h1{color: #fff;}
+/* *********************** */
 
-.dark .navbar-toggler-icon{ border: 2px solid red;}
 
+.dark .tabela th,
+.dark .tabela td {
+    padding: 8px;
+    text-align: left;
+    color: #fff;
+}
+  
+.dark .tabela th {
+    background-color: var(--corPrincipalDark);
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  /* Estilos para linhas alternadas (opcional) */
+.dark .tabela td { background-color: var(--corPrincipalDark);
+}
+
+/* ********************** */
 .active>.page-link{background-color: var(--corPrincipal);
      border: none;}
 
 .page-link{color: var(--corPrincipal);}
 
-.fh1{font-family:sans-serif;}
+
 
 /* **************************************** */
 

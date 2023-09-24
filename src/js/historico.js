@@ -31,7 +31,8 @@ if (tabelaVetor != null) {
   let tabela = document.getElementById("historico-tabela")
 
   // Cria uma tabela HTML
-  let table = document.createElement("table");
+  let table = document.createElement("table")
+  table.classList.add("tabela")
  
 
 
