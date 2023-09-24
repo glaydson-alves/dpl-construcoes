@@ -38,7 +38,7 @@ if (tabelaVetor != null) {
 
   // Cria a linha de cabeçalho
   let headerRow = document.createElement("tr")
-  let headers = ["Data", "Integrantes", "Local", "Veiculo"] // Substitua pelos nomes das suas colunas
+  let headers = ["Data", "Integrantes", "Local", "Veiculo"]
   for (let header of headers) {
     let th = document.createElement("th")
     th.textContent = header
