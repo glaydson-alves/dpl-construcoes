@@ -20,6 +20,7 @@ btnSubmit.addEventListener('click', ()=>{
         alert("por favor, selecione uma imagem.")
         event.preventDefault()
     }
+    else{loader.style.display = 'block'}
     if(btnSubmit.classList.contains("concluir")){
         let resultado = JSON.parse(localStorage.getItem("historico"))
         let historicoTemp = JSON.parse(localStorage.getItem("historicoTemp"))

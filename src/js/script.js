@@ -37,13 +37,14 @@ document.getElementById('submit').addEventListener('click', (event)=>{
     // Impede o envio do formulário
   }
   else{
+    loader.style.display = 'block'
     console.log(dados)
     dados.data = dataFormatada
     dados.integrante = integrante.value
     dados.local = local.value
     dados.veiculo = veiculo.value
     localStorage.setItem("historicoTemp",JSON.stringify(dados))
-    loader.style.display = 'block'
+    
     
     // window.location.href = (src/pages/desligar.html)
     // localStorage.getItem(JSON.parse(dados))
