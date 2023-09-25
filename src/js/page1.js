@@ -11,7 +11,7 @@ input.onchange = (e) =>{
 }
 
 // VALIDAÇÃO DE CAMPO VAZIO DA IMG
-btnSubmit.addEventListener('click', ()=>{
+btnSubmit.addEventListener('click', (event)=>{
     let inputImg = document.getElementById('input')
     let imgConteudo = inputImg.value
 
