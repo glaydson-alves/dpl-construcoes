@@ -111,6 +111,7 @@
                 <div>
                     <div class="mb-3">
                         <input class="form-control mt-5" type="file" id="input" accept="image/*">
+                    
                     </div>
 
                     <section class="row mb-3">
@@ -120,7 +121,14 @@
                                 class="form-control remove"></textarea>
                             <p class="text-end">Total de caracteres restantes <span id="restante">0</span>/100</p>
                         </div>
+                        <div class="voltar" id="notificacao">
+                            <img src="../image/circle-check.png"> 
+                            <h2>Enviado com Sucesso!</h2>
+                            <p>Aperte "Ok" para retornar ao início.</p>   
+                            <a class="btn" href="/index.html"><span class="loader" id="loader"></span>OK</a>                                           
+                        </div>
                     </section>
+                    
 
                     <a href="#" class="color-btn rounded text-light p-3 mb-5 concluir" id="submit">
                         <span class="loader" id="loader"></span>Concluir
