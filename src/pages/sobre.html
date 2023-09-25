@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- LINK do bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <!-- LInk cdn fot awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- link favicon -->
+    <link rel="shortcut icon" href="../image/logo.png" type="image/x-icon">
+    <!-- link css -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- lick fonte -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;800&display=swap" rel="stylesheet">
+
+    <title>Aterrar</title>
+</head>
+
+<body>
+    <header class="bgcnav shadow">
+        <nav class="navbar">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                    aria-label="Toggle navigation">
+                    <span><i class="fa-solid fa-bars" style="color: #ffffff;"></i></span>
+                </button>
+
+                <div>
+                    <a class="navbar-brand" href="#">
+                        <img src="../image/logo.png" alt="Logo DPL" class="logonav ">
+                    </a>
+                </div>
+
+                <section>
+                    <p id="dat"></p>
+                </section>
+
+                <div class="offcanvas offcanvas-start text-light colapseCor" tabindex="-1" id="offcanvasDarkNavbar"
+                    aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">DPL</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <section class="ms-3">
+                        <p id="data"></p>
+                    </section>
+                    <div class="offcanvas-body">
+                        
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active text-light" aria-current="page" href="../.."><i class="pe-2 fa-solid fa-house" style="color: #ffffff;"></i> Início</a>
+                            </li>
+                            <hr>                            
+                            <li class="nav-item">
+                                <a class="nav-link active text-light" aria-current="page" href="#"><i class="pe-2 fa-solid fa-circle-info" style="color: #ffffff;"></i> Sobre</a>
+                            </li>
+                            <hr>
+                            <li class="nav-item">
+                                <a class="nav-link active text-light" aria-current="page" href="./historico.html"><i class="pe-2 fa-solid fa-clock-rotate-left" style="color: #fff;"></i> Histórico</a>
+                            </li>
+                            <hr>
+                            <li class="nav-item">
+                                 <!-- BOTÃO MODO ESCURO -->
+
+                                <div class="container-modo-dark">
+                                    
+                                    <div>
+                                        <div class="desc-dark">
+                                            <p><i class="pe-2 fa-solid fa-circle-half-stroke" style="color: #ffffff;"></i> Modo Escuro</p>
+                                        </div>
+                                        <input type="checkbox" class="checkbox" id="escuro">
+                                        <label class="label" for="escuro">
+                                            <div class="ball"></div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        
+    </main>
+
+
+    <footer class="bgcfooter text-center mt-5 d-flex align-items-center flex-column">
+        <div class="mt-2">
+            <a href="https://www.instagram.com/dplconstrucoesltda/" target="_blank"><i class="fa-brands fa-instagram"
+                    style="color: #d92e7f"></i></a>
+            <a href="https://www.linkedin.com/company/dplconstrucoes/?originalSubdomain=br" target="_blank"> <i
+                    class="fa-brands fa-linkedin" style="color: #0a66c2;"></i></a>
+        </div>
+
+        <section class="mt-2">
+            <span class="text-light"><i class="fa-solid fa-phone"></i> (98) 99184-4123 </span>
+            <p class="text-light m-2"><i class="fa-solid fa-envelope"></i> alexandre.torres@dpl.srv.br</p>
+        </section>
+
+        <hr>
+        <p class="text-light p-2">Todos os direitos reservados &copy; 2023</p>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/page1.js"></script>
+    <script src="../js/modoDark.js"></script>
+</body>
+
+</html>
