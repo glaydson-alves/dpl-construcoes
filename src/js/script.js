@@ -1,6 +1,7 @@
 // Seleciona o elemento HTML onde você deseja exibir a data
 let elementoData = document.getElementById("data");
 let dados = {
+  data:"",
   integrante:"",
   local:"",
   veiculo:""
@@ -35,8 +36,11 @@ document.getElementById('submit').addEventListener('click', ()=>{
     event.preventDefault() // Impede o envio do formulário
   }
   else{
-    console.log(dados)
-    localStorage.setItem("dados",JSON.stringify(dados))
+    dados.data = dataFormatada
+    dados.integrante = integrante
+    dados.local = local
+    dados.veiculo = veiculo
+    localStorage.setItem("dados",JSON.stringify("historicoTemp", dados))
     loader.style.display = 'block'
     
     // window.location.href = (src/pages/desligar.html)
