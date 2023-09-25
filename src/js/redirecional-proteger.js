@@ -1,6 +1,8 @@
 // let redirecional = document.getElementById("notificacao")
 
-
+setTimeout(()=>{
+    window.location.href = "../..";
+}, 5000)
 
 // function AbrirNotificacao(){
 //     if(imgConteudo === ''){
