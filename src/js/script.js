@@ -1,5 +1,9 @@
 // Seleciona o elemento HTML onde você deseja exibir a data
-let elementoData = document.getElementById("data");
+let elementoData = document.getElementById("data")
+let dataFormatada = ""
+let integrante = document.getElementById('integrante')
+let local = document.getElementById('local')
+let veiculo = document.getElementById('veiculo')
 let dados = {
   data:"",
   integrante:"",
@@ -11,7 +15,7 @@ function atualizarData() {
   let dataAtual = new Date();
   
   // Formate a data como desejar, por exemplo, "dd/mm/yyyy"
-  let dataFormatada = dataAtual.toLocaleDateString();
+  dataFormatada = dataAtual.toLocaleDateString();
   
   // Atualize o conteúdo do elemento HTML
   elementoData.textContent = dataFormatada;
@@ -25,23 +29,24 @@ setInterval(atualizarData, 1000);
 
 // VALIDAÇÃO DE CAMPOS VAZIOS
 
-document.getElementById('submit').addEventListener('click', ()=>{
+document.getElementById('submit').addEventListener('click', (event)=>{
   // Verifique se os campos estão vazios
-  const integrante = document.getElementById('integrante').value
-  const local = document.getElementById('local').value
-  const veiculo = document.getElementById('veiculo').value
-
-  if ( integrante === '' || local === '' || veiculo === ''){
+  if ( integrante.value === '' || local.value === '' || veiculo.value === ''){
     alert('Por favor, preencha todos os campos.')
-    event.preventDefault() // Impede o envio do formulário
+    event.preventDefault() 
+    // Impede o envio do formulário
   }
   else{
-    dados.data = dataFormatada
-    dados.integrante = integrante
-    dados.local = local
-    dados.veiculo = veiculo
-    localStorage.setItem("dados",JSON.stringify("historicoTemp", dados))
+    console.log(dados)
+    localStorage.setItem("dados",JSON.stringify(dados))
     loader.style.display = 'block'
+    console.log(dados)
+    dados.data = dataFormatada
+    dados.integrante = integrante.value
+    dados.local = local.value
+    dados.veiculo = veiculo.value
+    localStorage.setItem("historicoTemp",JSON.stringify(dados))
+    
     
     // window.location.href = (src/pages/desligar.html)
     // localStorage.getItem(JSON.parse(dados))
@@ -50,48 +55,36 @@ document.getElementById('submit').addEventListener('click', ()=>{
 })
 
 // VALIDAÇÃO INTEGRANTE
-let integranteValue = document.querySelector("#integrante")
 
-integranteValue.addEventListener("blur", ()=>{
-    if (integranteValue.value == ""){
-      integranteValue.classList.add("border-danger","border-1")
-    }else{
-      integranteValue.classList.remove("border-danger","border-1")
-      dados.integrante = integranteValue.value  
-    }
+integrante.addEventListener("blur", function(){
+  if(integrante.value == ""){
+    integrante.classList.add("border-danger")
+  }
+  else{
+    integrante.classList.remove("border-danger")
+  }
 })
 
 // VALIDAÇÃO LOCAL
-let localValue = document.querySelector("#local")
-
-localValue.addEventListener("blur", ()=>{
-    if (localValue.value == ""){
-      localValue.classList.add("border-danger","border-1")
-    }else{
-      localValue.classList.remove("border-danger","border-1")  
-      dados.local = localValue.value
-    }
+local.addEventListener("blur", function(){
+  if(local.value == ""){
+    local.classList.add("border-danger")
+  }
+  else{
+    local.classList.remove("border-danger")
+  }
 })
 
 // VALIDAÇÃO VEICULO
-let veiculoValue = document.querySelector("#veiculo")
 
-veiculoValue.addEventListener("blur", ()=>{
-    if (veiculoValue.value == ""){
-      veiculoValue.classList.add("border-danger","border-1")
-    }else{
-      veiculoValue.classList.remove("border-danger","border-1")  
-      dados.veiculo = veiculoValue.value
-    }
+veiculo.addEventListener("blur", function(){
+  if(veiculo.value == ""){
+    veiculo.classList.add("border-danger")
+  }
+  else{
+    veiculo.classList.remove("border-danger")
+  }
 })
 
 // ************************************************//
-
-// MODO ESCURO
-// const escuro = document.getElementById('escuro')
-
-
-// dark.addEventListener('change', () => {document.body.classList.toggle('dark')})
-
-
 

@@ -2,10 +2,13 @@
 padding: 0;
 box-sizing: border-box;}
 
-body{width: 100%;
+body{
+    font-family: 'poppins', sans-serif;
+    width: 100%;
     height: 100vh;
     display: flex;
-flex-direction: column;}
+    flex-direction: column;
+}
 
 main{flex: 1 0 auto;}
 
@@ -20,17 +23,12 @@ footer{flex-shrink: 0;}
     --corPrincipalDark:#003246;
 }
 
-
-.navbar-toggler:focus{
-    box-shadow: none;
-}
-
+.navbar-toggler:focus{box-shadow: none;}
 
 .bgcnav,
 .colapseCor{background: var(--corPrincipal);}
 
 .logonav{height: 40px; }
-
 
 #data{
     font-size: 14px;
@@ -38,7 +36,6 @@ footer{flex-shrink: 0;}
 }
 
 .bgcfooter{background-color: var(--corPrincipal);}
-
 
 /* BOTÃO ENVIAR */
 .color-btn{
@@ -60,22 +57,58 @@ footer{flex-shrink: 0;}
     padding: 5px;
     background-color: white;
 }
-
 hr{
     width: 90%;
     margin-left: 5%;
     color: white;
 }
+.navbar-toggler{border:none;}
+.form-check-input:checked {background-color: var(--corSecundaria);}
 
-
-.navbar-toggler{
-    border:none;
+/************ redirecional***************/
+.voltar{
+    width: 80%;
+    background: #049DD9;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #f3f3f3;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+.AbrirNotificacao{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
 }
 
-.form-check-input:checked {
+.voltar img{
+    width: 100px;
+    margin-top: -50px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px #6d6c6c;
+}
+.voltar h2{
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+.voltar .btn{
+    width: 100%;
+    margin-top: 20%;
+    padding: 10px 0;
     background-color: var(--corSecundaria);
+    color: #fff;
+    border: o;
+    outline: none;
+    font-size: 18px;
+    box-shadow: 0 5px 5px #6d6c6c;
 }
-
+/* ********************************** */
 
 /* MODO ESCURO */
 
@@ -84,16 +117,34 @@ hr{
 .dark .bgcfooter{background-color: var(--corPrincipalDark);}
 .dark .bgcnav{background-color: var(--corPrincipalDark);}
 body.dark{background-color: var(--corPrincipalDark);}
-.dark h1{color: #fff;}
+.dark h1,
+.dark p,
+.dark #restante{color: #fff;}
+.dark .tabela th,
+.dark .tabela td {
+    padding: 8px;
+    text-align: left;
+    color: #fff;
+}
+  
+.dark .tabela th {
+    background-color: var(--corSecundaria);
+    font-weight: bold;
+    color: #fff;
+}
 
-.dark .navbar-toggler-icon{ border: 2px solid red;}
+.dark .tabela td { background-color: var(--corPrincipalDark);
+}
 
-.active>.page-link{background-color: var(--corPrincipal);
-     border: none;}
+/* ********************** */
+.active>.page-link{
+    background-color: var(--corPrincipal);
+    border: none;
+}
 
 .page-link{color: var(--corPrincipal);}
 
-.fh1{font-family:sans-serif;}
+
 
 /* **************************************** */
 

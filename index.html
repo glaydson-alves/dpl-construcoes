@@ -13,8 +13,12 @@
     <link rel="shortcut icon" href="src/image/logo.png" type="image/x-icon">
     <!-- link css -->
     <link rel="stylesheet" href="src/css/style.css">
+    <!-- lick fonte -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;800&display=swap" rel="stylesheet">
 
-    <title>Dados do serviço</title>
+    <title>DPL Construções ltda.</title>
 </head>
 
 <body>
@@ -50,21 +54,29 @@
                         <p id="data"></p>
                     </section>
                     <div class="offcanvas-body">
+                        
                         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                             <li class="nav-item">
-                                <a class="nav-link active text-light" aria-current="page" href="#">Sobre</a>
+                                <a class="nav-link active text-light" aria-current="page" href="../.."><i class="pe-2 fa-solid fa-house" style="color: #ffffff;"></i> Início</a>
                             </li>
+                            <hr>
                             <li class="nav-item">
                                 <a class="nav-link active text-light" aria-current="page" href="src/pages/historico.html">Histórico</a>
                             </li>
+                            <hr>
+                            <li class="nav-item">
+                                <a class="nav-link active text-light" aria-current="page" href="src/pages/historico.html"><i class="pe-2 fa-solid fa-clock-rotate-left" style="color: #fff;"></i> Histórico</a>
+                            </li>
+                            <hr>
                             <li class="nav-item">
                                  <!-- BOTÃO MODO ESCURO -->
 
                                 <div class="container-modo-dark">
-                                    <div class="desc-dark">
-                                        <p>Modo Escuro</p>
-                                    </div>
+                                    
                                     <div>
+                                        <div class="desc-dark">
+                                            <p><i class="pe-2 fa-solid fa-circle-half-stroke" style="color: #ffffff;"></i> Modo Escuro</p>
+                                        </div>
                                         <input type="checkbox" class="checkbox" id="escuro">
                                         <label class="label" for="escuro">
                                             <div class="ball"></div>
@@ -98,7 +110,7 @@
                     <input type="text" class="form-control" id="veiculo" placeholder="Indentificação do Veículo">
                     <label for="floatingInput"><i class="fa-solid fa-car"></i> Indentificação do Veículo</label>
                 </div>
-                <a href="src/pages/desligar.html"  class="container color-btn rounded text-light p-3 mb-5" type="submit" id="submit"><span class="loader" id="loader"></span>ENVIAR</a>
+                <a href="src/pages/desligar.html"  class="container color-btn rounded text-light p-3 mb-5" id="submit"><span class="loader" id="loader"></span>ENVIAR</a>
                 
             </section>
         </form>

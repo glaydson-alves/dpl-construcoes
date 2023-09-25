@@ -1,23 +1,32 @@
-// Verifiquei se o tema está armazenado no localStorage
-const temaArmazenado = localStorage.getItem("tema")
 
-if (temaArmazenado) {
-    tema = JSON.parse(temaArmazenado)
-    if (tema.modo === "escuro") {
+const check = document.getElementById("escuro")
+const modoEscuro = document.getElementById("escuro")
+
+
+if (localStorage.getItem("escuro") === null) {
+    localStorage.setItem("escuro", "false")
+}
+checkStatus()
+
+
+modoEscuro.addEventListener("click", alterarModo)
+
+function alterarModo() {
+    if (localStorage.getItem("escuro") === "true") {
+        localStorage.setItem("escuro", "false")
+    } else {
+        localStorage.setItem("escuro", "true")
+    }
+    checkStatus()
+}
+
+function checkStatus() {
+    if (localStorage.getItem("escuro") === "true") {
+        check.checked = true
         document.body.classList.add('dark')
-        escuro.checked = true
+    } else {
+        check.checked = false
+        document.body.classList.remove('dark')
     }
 }
 
-// Adicionei um ouvinte de eventos para o interruptor de tema
-escuro.addEventListener('change', () => {
-    if (document.body.classList.contains('dark')) {
-        document.body.classList.remove('dark')
-        thema.modo = ""
-    } else {
-        document.body.classList.add('dark')
-        thema.modo = "escuro"
-    }
-    
-    localStorage.setItem("tema", JSON.stringify(tema))
-})

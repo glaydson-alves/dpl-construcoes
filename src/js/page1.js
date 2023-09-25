@@ -1,5 +1,7 @@
 let img = document.getElementById("img")
 let input = document.getElementById("input")
+let btnSubmit = document.getElementById('submit')
+let listaHistorico = []
 
 listaHistorico = []
 
@@ -11,7 +13,7 @@ input.onchange = (e) =>{
 }
 
 // VALIDAÇÃO DE CAMPO VAZIO DA IMG
-document. getElementById('submit').addEventListener('click', ()=>{
+btnSubmit.addEventListener('click', (event)=>{
     let inputImg = document.getElementById('input')
     let imgConteudo = inputImg.value
 
@@ -19,6 +21,22 @@ document. getElementById('submit').addEventListener('click', ()=>{
         console.log(imgConteudo)
         alert("por favor, selecione uma imagem.")
         event.preventDefault()
+    }
+    else{loader.style.display = 'block'}
+    if(btnSubmit.classList.contains("concluir")){
+        let resultado = JSON.parse(localStorage.getItem("historico"))
+        let historicoTemp = JSON.parse(localStorage.getItem("historicoTemp"))
+
+        if(resultado == null){
+            listaHistorico.push(historicoTemp)
+        }
+        else{
+            listaHistorico = resultado
+            listaHistorico.push(historicoTemp) 
+        }
+        localStorage.setItem("historico", JSON.stringify(listaHistorico))
+        localStorage.removeItem("historicoTemp")
+        console.log(historicoTemp)
     }
 })
 
