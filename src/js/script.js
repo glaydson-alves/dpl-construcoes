@@ -11,11 +11,11 @@ let dados = {
   veiculo:""
 }
 
-setTimeout(()=>{
-  // window.location.href = "";
-  splash.classList.replace("d-block","d-none")
-  corpo.classList.replace("d-none","d-block")
-}, 5000)
+// setTimeout(()=>{
+//   // window.location.href = "";
+//   splash.classList.replace("d-block","d-none")
+//   corpo.classList.replace("d-none","d-block")
+// }, 5000)
 
 // Função para atualizar a data
 function atualizarData() {
@@ -46,7 +46,7 @@ document.getElementById('submit').addEventListener('click', (event)=>{
   else{
     console.log(dados)
     localStorage.setItem("dados",JSON.stringify(dados))
-    loader.classList.add("loader")
+    loader.style.display = 'block'
     console.log(dados)
     dados.data = dataFormatada
     dados.integrante = integrante.value

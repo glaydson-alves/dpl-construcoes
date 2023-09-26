@@ -2,7 +2,7 @@
 
 setTimeout(()=>{
     window.location.href = "../..";
-}, 5000)
+}, 2000)
 
 // function AbrirNotificacao(){
 //     if(imgConteudo === ''){
