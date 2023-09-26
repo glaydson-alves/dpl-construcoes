@@ -38,6 +38,11 @@ footer{flex-shrink: 0;}
 .bgcfooter{background-color: var(--corPrincipal);}
 
 /* BOTÃO ENVIAR */
+.corbtn{
+    color: #fff;
+    background-color: var(--corPrincipal);
+}
+
 .color-btn{
     display: flex;
     justify-content: center;
@@ -111,6 +116,7 @@ hr{
 /* ********************************** */
 
 /* MODO ESCURO */
+.dark .modal-title{color: #000;}
 
 .dark .colapseCor{background-color: var(--corPrincipalDark);}
 

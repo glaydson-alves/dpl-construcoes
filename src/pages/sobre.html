@@ -18,7 +18,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;800&display=swap" rel="stylesheet">
 
-    <title>Aterrar</title>
+    <title>Desenvolvedores</title>
 </head>
 
 <body>
@@ -52,34 +52,43 @@
                         <p id="data"></p>
                     </section>
                     <div class="offcanvas-body">
-                        
+
                         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                             <li class="nav-item">
-                                <a class="nav-link active text-light" aria-current="page" href="../.."><i class="pe-2 fa-solid fa-house" style="color: #ffffff;"></i> Início</a>
-                            </li>
-                            <hr>                            
-                            <li class="nav-item">
-                                <a class="nav-link active text-light" aria-current="page" href="#"><i class="pe-2 fa-solid fa-circle-info" style="color: #ffffff;"></i> Sobre</a>
+                                <a class="nav-link active text-light" aria-current="page" href="../.."><i
+                                        class="pe-2 fa-solid fa-house" style="color: #ffffff;"></i> Início</a>
                             </li>
                             <hr>
                             <li class="nav-item">
-                                <a class="nav-link active text-light" aria-current="page" href="./historico.html"><i class="pe-2 fa-solid fa-clock-rotate-left" style="color: #fff;"></i> Histórico</a>
+                                <a class="nav-link active text-light" aria-current="page" href="#"><i
+                                        class="pe-2 fa-solid fa-circle-info" style="color: #ffffff;"></i>
+                                    Desenvolvedores</a>
                             </li>
                             <hr>
                             <li class="nav-item">
-                                 <!-- BOTÃO MODO ESCURO -->
+                                <a class="nav-link active text-light" aria-current="page" href="./historico.html"><i
+                                        class="pe-2 fa-solid fa-clock-rotate-left" style="color: #fff;"></i>
+                                    Histórico</a>
+                            </li>
+                            <hr>
+                            <li class="nav-item">
+                                <!-- BOTÃO MODO ESCURO -->
 
                                 <div class="container-modo-dark">
-                                    
+
                                     <div>
                                         <div class="desc-dark">
-                                            <p><i class="pe-2 fa-solid fa-circle-half-stroke" style="color: #ffffff;"></i> Modo Escuro</p>
+                                            <p><i class="pe-2 fa-solid fa-circle-half-stroke"
+                                                    style="color: #ffffff;"></i> Modo Escuro</p>
                                         </div>
                                         <input type="checkbox" class="checkbox" id="escuro">
                                         <label class="label" for="escuro">
                                             <div class="ball"></div>
                                         </label>
                                     </div>
+                                    <section class="m-3 fixed-bottom">
+                                        <small> Versão 1.0</small>
+                                    </section>
                                 </div>
                             </li>
                         </ul>
@@ -89,8 +98,118 @@
         </nav>
     </header>
 
-    <main>
-        
+    <main class="d-flex flex-column justify-content-center align-items-center">
+        <div class="card text-center mb-3 col-sm-10 mt-5">
+            <div class="card-body">
+                <h5 class="card-title">Alekerson Mendes</h5>
+                <p class="card-text text-dark"><i class="fa-solid fa-envelope" style="color: #000000;"></i>
+                    Alekersonm@gmail.com</p>
+                <p class="card-text text-dark"><i class="fa-solid fa-phone" style="color: #000000;"></i> (98)98894-4422
+                </p>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn corbtn" data-bs-toggle="modal" data-bs-target="#contatoAlekerson">
+                    Entrar em Contato
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="contatoAlekerson" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Desenvolvedor Alekerson</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="list-group">
+                                    <a href="https://github.com/Alekerson" target="_blank" class="list-group-item list-group-item-action"><i class="fa-brands fa-github" style="color: #000000;"></i> Git hub</a>
+                                    <a href="https://www.linkedin.com/in/alekerson-mendes-46b30a222" class="list-group-item list-group-item-action"><i class="fa-brands fa-linkedin" style="color: #000000;"></i> Linkedin</a>
+                                  </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card text-center mb-3 col-sm-10">
+            <div class="card-body">
+                <h5 class="card-title">Glaydson Alves</h5>
+                <p class="card-text text-dark"><i class="fa-solid fa-envelope" style="color: #000000;"></i>
+                    Alekersonm@gmail.com</p>
+                <p class="card-text text-dark"><i class="fa-solid fa-phone" style="color: #000000;"></i> (98)99613-5227
+                </p>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn corbtn" data-bs-toggle="modal" data-bs-target="#contatoGlaydson">
+                    Entrar em Contato
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="contatoGlaydson" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Desenvolvedor Glaydson</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="list-group">
+                                    <a href="https://github.com/glaydson-alves" target="_blank" class="list-group-item list-group-item-action"><i class="fa-brands fa-github" style="color: #000000;"></i> Github</a>
+                                    <a href="https://www.linkedin.com/in/glaydson-alves-b15227199/" target="
+                                    _bla" class="list-group-item list-group-item-action"><i class="fa-brands fa-linkedin" style="color: #000000;"></i> Linkedin</a>
+                                  </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card text-center mb-3 col-sm-10">
+            <div class="card-body">
+                <h5 class="card-title">Samuel Cantanhede</h5>
+                <p class="card-text text-dark"><i class="fa-solid fa-envelope" style="color: #000000;"></i>
+                    samuelcantanhede17@gmail.com</p>
+                <p class="card-text text-dark"><i class="fa-solid fa-phone" style="color: #000000;"></i> (98)98808-2636
+                </p>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn corbtn" data-bs-toggle="modal" data-bs-target="#contatoSamuel">
+                    Entrar em Contato
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="contatoSamuel" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Desenvolvedor Samuel</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="list-group">
+                                    <a href="https://github.com/campanhaaaaa" target="_blank" class="list-group-item list-group-item-action"><i class="fa-brands fa-github" style="color: #000000;"></i> Git hub</a>
+                                    <a href="https://www.linkedin.com/in/samuel-cantanhede-576ba5246/" class="list-group-item list-group-item-action"><i class="fa-brands fa-linkedin" style="color: #000000;"></i> Linkedin</a>
+                                  </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
 
